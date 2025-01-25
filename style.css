@@ -1,11 +1,11 @@
 .custom-div {
-    background-image: url('Amigos.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('amigosatt.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir toda a div */
     background-position: right; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     color: rgb(255, 255, 255); /* Cor do texto */
     padding: 50px 20px; /* Reduz o espaçamento interno superior */
-    height: 50vh; /* Altura total da janela */
+    height: 45vh; /* Altura total da janela */
     display: flex; /* Ativa o flexbox */
     flex-direction: column; /* Organiza os itens em coluna */
     justify-content: flex-start; /* Posiciona os itens no topo */
@@ -13,13 +13,15 @@
 }
 
 
+
 .input-wrapper {
-    background-color: #cebb96; /* Cor de fundo */
+    
+    background: linear-gradient(90deg, #867561, #212529);
     padding: 30px;
     max-width: 100%; /* Ocupa toda a largura disponível */
     margin: 0 auto; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza os elementos */
-    height: 80vh; /* Reduz a altura total da seção */
+    height: 40vh; /* Reduz a altura total da seção */
     display: flex; /* Ativa o flexbox */
     flex-direction: column; /* Organiza os elementos em coluna */
     justify-content: flex-start; /* Posiciona os itens no topo */
@@ -67,7 +69,7 @@
 }
 
 .button-sortear {
-    margin-top: 100px; /* Espaço acima do botão "sortear amigo" */
+    margin-top: 0px; /* Espaço acima do botão "sortear amigo" */
     background-color: #867561; /* Cor personalizada */
     color: white;
     padding: 10px 20px;
@@ -80,4 +82,40 @@
 
 .button-sortear:hover {
     background-color: #3b3413; /* Cor mais escura ao passar o mouse */
+}
+
+#listaNomes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os nomes quebrem para a linha seguinte quando necessário */
+}
+
+#listaNomes p {
+    margin-right: 10px; /* Espaçamento entre os nomes */
+    margin-bottom: 10px; /* Adiciona espaçamento entre linhas quando os nomes se moverem para a próxima linha */
+}
+
+.result-box {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #867561;
+    margin-top: 15px;
+}
+
+footer {
+    background: linear-gradient(90deg, #706354, #212529);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+footer p {
+    margin: 0;
 }
