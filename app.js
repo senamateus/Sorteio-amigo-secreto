@@ -1,7 +1,7 @@
 let nomeDigitado;
 let LimparNome;
 let nomesDigitados = [];
-
+let buttonSortear = document.querySelector('.button-sortear');
 
 function adicionarAmigo(){
     nomeDigitado = document.querySelector('input').value;
@@ -44,6 +44,7 @@ function sortearAmigo() {
     let campoSorteado = document.querySelector('#resultadoSorteio'); // Seleciona o campo para exibir o nome sorteado
     campoSorteado.innerHTML = `Amigo Sorteado: ${nomeSorteado}`; // Atualiza o conteúdo do campo
     campoSorteado.style.display = 'block';
+    buttonSortear.style.display = 'none';
 }
 
 function novaLista() {
@@ -57,4 +58,6 @@ function novaLista() {
     // Oculta a div do sorteado
     let campoSorteado = document.querySelector('#resultadoSorteio');
     campoSorteado.style.display = 'none';
+
+    buttonSortear.style.display = 'block';
 }

@@ -69,7 +69,7 @@
 }
 
 .button-sortear {
-    margin-top: 0px; /* Espaço acima do botão "sortear amigo" */
+    margin-top: -20px; /* Espaço acima do botão "sortear amigo" */
     background-color: #867561; /* Cor personalizada */
     color: white;
     padding: 10px 20px;
@@ -94,7 +94,7 @@
     margin-bottom: 10px; /* Adiciona espaçamento entre linhas quando os nomes se moverem para a próxima linha */
 }
 
-.result-box {
+/*.result-box {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
@@ -102,7 +102,17 @@
     border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: #867561;
-    margin-top: 15px;
+    margin-top: -10px;
+}*/
+.result-box {
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    position: relative;
+    background-color: #867561;
+    padding: 4px;
+    top: -30px; /* Move a div para cima */
 }
 
 footer {
